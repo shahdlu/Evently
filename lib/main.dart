@@ -1,4 +1,5 @@
 import 'package:evently/core/utils/app_routes.dart';
+import 'package:evently/core/utils/app_theme.dart';
 import 'package:evently/ui/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.home : (context) => HomeScreen(),
       },
+      theme: AppTheme.lightMode,
+      darkTheme: AppTheme.darkMode,
+      themeMode: ThemeMode.dark,
     );
   }
 }
